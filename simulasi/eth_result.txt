@@ -1,0 +1,61 @@
+Jaringan: Hardhat in-memory, chainId = 31337
+
+[Deploy DiplomaRegistry]
+ tx hash   : 0xb8e55ad9081380b68ce3e526fb92a52640c51ceb0e409c7255689cff5d7fe1ab
+ block     : 1
+ from      : 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+ to        : null
+ value     : 0 wei
+ gas limit : 30000000
+ gas used  : 855015
+ gas price : 1875000000 wei (1.875 gwei)
+ fee       : 1603153125000000 wei (0.001603153125 ETH)
+ status    : 1 (success)
+ contract  : 0x5FbDB2315678afecb367f032d93F642f64180aa3
+
+[addIssuer]
+ tx hash   : 0x09008ea7ee4b8f163b24f9fa5eaf66846f2aa05e4f365d8707ad671216d01b15
+ block     : 2
+ from      : 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+ to        : 0x5FbDB2315678afecb367f032d93F642f64180aa3
+ value     : 0 wei
+ gas limit : 30000000
+ gas used  : 48825
+ gas price : 1771859485 wei (1.771859485 gwei)
+ fee       : 86511039355125 wei (0.000086511039355125 ETH)
+ status    : 1 (success)
+
+[issue(id, docHash)]
+ tx hash   : 0xa83570047fe196873ffb6952c1dedbd2a224facdc94235fe2591e0437fadc5ef
+ block     : 3
+ from      : 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+ to        : 0x5FbDB2315678afecb367f032d93F642f64180aa3
+ value     : 0 wei
+ gas limit : 30000000
+ gas used  : 100843
+ gas price : 1675691100 wei (1.6756911 gwei)
+ fee       : 168981717597300 wei (0.0001689817175973 ETH)
+ status    : 1 (success)
+ event     : CredentialIssued | id = 0xc4bd1e0251ae3221a7d0121eae401f219577edf0ede8564ccf288de91c71fe00 | docHash = 0x91a07d82316b4f1a751218ef5ffcf898e469e56af2ce9f54ae1e8aacb6465300 | issuer = 0x70997970C51812dc3A010C7d01b50e0d17dc79C8 | issuedAt = 1791986073
+ id        : 0xc4bd1e0251ae3221a7d0121eae401f219577edf0ede8564ccf288de91c71fe00 
+ docHash   : 0x91a07d82316b4f1a751218ef5ffcf898e469e56af2ce9f54ae1e8aacb6465300
+
+[verify (view, tanpa gas)] valid = true status = ACTIVE
+[verify hash berubah] valid = false
+
+[revoke(id, reason=2)]
+ tx hash   : 0x8622dbbb82d2e4ddc41c39611deadbf0b2b2e60d7845abfa9c649379e376df39
+ block     : 4
+ from      : 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+ to        : 0x5FbDB2315678afecb367f032d93F642f64180aa3
+ value     : 0 wei
+ gas limit : 30000000
+ gas used  : 54052
+ gas price : 1591797536 wei (1.591797536 gwei)
+ fee       : 86039840415872 wei (0.000086039840415872 ETH)
+ status    : 1 (success)
+[verify setelah revoke] valid = false status = REVOKED
+
+[issue oleh non-issuer] revert: VM Exception while processing transaction: reverted with an unrecognized custom 
+
+Blok terakhir: 5 | baseFeePerGas = 518089410 | gasLimit blok = 30000000

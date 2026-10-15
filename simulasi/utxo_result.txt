@@ -1,0 +1,20 @@
+UTXO awal Alice: 7a8676d104e2ada4..:0 = 1.00000000 BTC (simulasi)
+
+Tx1 dikirim ke mempool: True fee = 0.0005 BTC
+Tx1 ID: 737956ee61c8069518961ff240d4cc2e9915b9dce3696b891fcd600dbe406d07
+Input : 7a8676d104e2ada4..:0 (1.00000000 BTC)
+Output 0: Bob 0.30000000 BTC
+Output 1: Alice(change) 0.69950000 BTC
+
+Tx2 (double spend UTXO yang sama) masuk mempool?  True | mempool sederhana menerima karena UTXO masih belum terkonfirmasi
+Tx2 ID: 53f0a3b163a4b56e1a1cdf1cc857310cc81f98d3af7add8a6697e7f982d2729e
+
+Blok #1 ditambang. Transaksi terkonfirmasi:
+  737956ee61c80695.. fee 0.0005
+Tx2 setelah blok #1 -> divalidasi ulang: (False, 'UTXO tidak ada / sudah dibelanjakan (double spend)')
+
+UTXO set akhir:
+  737956ee61c80695..:0 Bob 0.30000000 BTC
+  737956ee61c80695..:1 Alice(change) 0.69950000 BTC
+
+Konfirmasi: Tx1 terkonfirmasi 1 (di blok #1)

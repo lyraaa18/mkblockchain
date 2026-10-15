@@ -1,0 +1,21 @@
+﻿# Dependencies & build artifacts
+**/node_modules/
+**/cache/
+**/artifacts/
+__pycache__/
+*.pyc
+
+# Local files, documents & archives
+/*.docx
+/*.pdf
+/*.png
+/*.pptx
+/*.zip
+/*.rar
+
+# System & IDE files
+.gemini/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

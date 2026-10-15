@@ -1,0 +1,28 @@
+{
+ "chain": [
+  {
+   "idx": 0,
+   "data": "R-01|IJZ-0001|NIM-DUMMY-001|Informatika|2026|ACTIVE",
+   "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+   "hash": "be917e2b8bcd7c9232975f0acdf28dc8af571f70b918e3ad7f37ee21dd45363d"
+  },
+  {
+   "idx": 1,
+   "data": "R-02|IJZ-0002|NIM-DUMMY-002|Informatika|2026|ACTIVE",
+   "prev": "be917e2b8bcd7c9232975f0acdf28dc8af571f70b918e3ad7f37ee21dd45363d",
+   "hash": "fef0bf19055c147f8e432647025c360f2a47c42fcba1d8b3f0dd8f8254ad3ef4"
+  },
+  {
+   "idx": 2,
+   "data": "R-03|IJZ-0003|NIM-DUMMY-003|Teknik Sipil|2026|ACTIVE",
+   "prev": "fef0bf19055c147f8e432647025c360f2a47c42fcba1d8b3f0dd8f8254ad3ef4",
+   "hash": "3556ece0a114dc49c22ad3d89a33af3a89d095a14a85b46d724bff3671b6d512"
+  },
+  {
+   "idx": 3,
+   "data": "R-04|IJZ-0004|NIM-DUMMY-004|Teknik Industri|2026|REVOKED",
+   "prev": "3556ece0a114dc49c22ad3d89a33af3a89d095a14a85b46d724bff3671b6d512",
+   "hash": "fd20372262b592815e6a7afcc7810bd233bea1397addca84b6f6f3ca86757eff"
+  }
+ ]
+}
